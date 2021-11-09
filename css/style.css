@@ -1,0 +1,677 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  font-size: 19px;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 700;
+  font-family: "Darker Grotesque";
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+header {
+  background-image: url(https://img.jakpost.net/c/2016/06/02/2016_06_02_5684_1464854890._large.jpg);
+  background-size: cover;
+}
+header.container {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  margin-left: 80px;
+}
+
+.menu__list {
+  height: 60px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.menu__list li a {
+  padding: 20px 0 20px 0;
+}
+
+.menu__list li a:hover {
+  color: #ffbb00;
+  transition: 0.5s;
+}
+
+.image__logo,
+.discount__inner-logo img {
+  height: 60px;
+  width: 130px;
+}
+
+.top {
+  padding-top: 150px;
+  padding-bottom: 180px;
+}
+
+.top__inner,
+.discount__inner {
+  text-align: center;
+}
+.top__info-slogan,
+.top__info-subtitle {
+  font-family: "Montserrat";
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.top__info-title {
+  font-family: "Darker Grotesque";
+  font-size: 60px;
+  margin: 20px 0 0;
+}
+
+.top__info-logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.history__items {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 30px;
+}
+.item__photo {
+  height: 500px;
+  width: 400px;
+}
+.history__item-photo1 {
+  height: 480px;
+  width: 380px;
+  margin: 10px 10px;
+}
+
+.history__item {
+  height: 500px;
+  width: 500px;
+  padding: 0 auto;
+  -webkit-box-shadow: 23px 10px 16px 1px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 23px 10px 16px 1px rgba(34, 60, 80, 0.2);
+  box-shadow: 23px 10px 16px 1px rgba(34, 60, 80, 0.2);
+}
+
+.history__item-photo1 {
+  background-image: url(https://jetstore.com.ua/image/catalog/avatars/Barbershop_034smoke_c_Lupi_Spuma-2-2100x1200.jpeg);
+  background-size: cover;
+}
+.history__item-title {
+  font-size: 40px;
+}
+
+.history__item-title,
+.history__item-text,
+.history__item-btn {
+  padding: 20px 10px;
+}
+
+.history__item-btn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgb(49, 47, 47);
+  color: #fff;
+  font-size: 25px;
+  font-family: "Darker Grotesque";
+  font-weight: 400;
+  padding: 16px 40px;
+  line-height: 17px;
+  margin: 10px 120px;
+  text-decoration: none;
+}
+.history__item-btn:hover {
+  background-color: #ffbb00;
+  color: #000;
+}
+.history__item-btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.statistic {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://www.patricknco.com/wp-content/themes/yootheme/cache/barbershops-1-365cc2b7.jpeg);
+  background-size: cover;
+  background-position-y: 38%;
+  margin-bottom: 30px;
+}
+
+.statistic__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistic__item {
+  margin: 10px auto;
+  display: flex;
+}
+
+.statistic__item-icon {
+  padding: 5px 0;
+}
+
+.statistic__item-inner {
+  margin-left: 10px;
+}
+
+.statistic__item-number {
+  font-family: "Darker Grotesque";
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+}
+
+.statistic__item-description {
+  color: #ffbb00;
+}
+
+.advantages__inner {
+  height: 600px;
+  padding-top: 30px;
+}
+
+.advantages__inner-item {
+  display: grid;
+  grid-template-columns: 155px 824px;
+  grid-template-rows: 119px 255px 166px;
+  margin-left: 70px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "advantages__inner-item-icon1 advantages__inner-item-description1"
+    "advantages__inner-item-icon2 advantages__inner-item-description2"
+    "advantages__inner-item-icon3 advantages__inner-item-description3";
+  box-shadow: 23px 10px 16px 1px rgb(34 60 80 / 20%);
+}
+
+.advantages__inner-item-icon1 {
+  grid-area: advantages__inner-item-icon1;
+  padding: 9px 13px;
+}
+
+.advantages__inner-item-description1 {
+  grid-area: advantages__inner-item-description1;
+  padding: 10px 27px;
+}
+
+.advantages__inner-item-description2 {
+  grid-area: advantages__inner-item-description2;
+  padding: 10px 27px;
+}
+
+.advantages__inner-item-icon2 {
+  grid-area: advantages__inner-item-icon2;
+  padding: 63px 13px;
+}
+
+.advantages__inner-item-icon3 {
+  grid-area: advantages__inner-item-icon3;
+  padding: 22px 13px;
+}
+
+.advantages__inner-item-description3 {
+  grid-area: advantages__inner-item-description3;
+  padding: 10px 27px;
+}
+
+.haircuts {
+  background-image: url(https://top-barbershop.com/media/2017/07/KSV0956.jpg);
+  background-size: cover;
+  background-position-y: 48%;
+  padding: 65px 10px;
+}
+
+.haircuts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.haircuts__inner-type1,
+.haircuts__inner-type2,
+.haircuts__inner-type3 {
+  height: 500px;
+  width: 300px;
+  border: rgba(34, 60, 80, 0.2) solid 4px;
+  border-top: rgba(195, 229, 255, 0.2) solid 4px;
+}
+
+.haircuts__inner-type1,
+.haircuts__inner-type2,
+.haircuts__inner-type3 {
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.haircuts__inner-type1:hover,
+.haircuts__inner-type2:hover,
+.haircuts__inner-type3:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.haircuts__inner-type1 {
+  background: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 1.9)),
+    url(http://dengodel.com/wp-content/uploads/2021/01/barbershop-chto-eto-1.jpg);
+  background-size: cover;
+  background-position-x: 29%;
+}
+
+.haircuts__inner-type2 {
+  background: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 1.9)),
+    url(https://barber.su/imgs/blog/031/31/blg5d20423fca98d5_91599848.jpg);
+  background-size: cover;
+  background-position-x: 48%;
+}
+
+.haircuts__inner-type3 {
+  background: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 1.9)),
+    url(https://img.particlenews.com/img/id/4RPfv8_0P5jp5Zs00?type=thumbnail_800x600);
+  background-size: cover;
+  background-position-x: 48%;
+}
+
+.haircuts__inner-name {
+  font-family: "Darker Grotesque";
+  font-size: 22px;
+  padding: 335px 23px 0;
+  text-align: center;
+  color: #ffbb00;
+}
+
+.haircuts__inner-description {
+  font-family: "Montserrat", italic;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 10px 50px;
+  color: #fff;
+}
+
+.feedback {
+  padding-top: 80px;
+}
+
+.feedback__inner {
+  display: grid;
+  grid-template-columns: 150px 250px 150px 250px 150px 250px;
+  grid-template-rows: 150px 150px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "feedback__inner-photo1 feedback__inner-review1 feedback__inner-photo2 feedback__inner-review2 feedback__inner-photo3 feedback__inner-review3"
+    "feedback__inner-photo4 feedback__inner-review4 feedback__inner-photo5 feedback__inner-review5 feedback__inner-photo6 feedback__inner-review6";
+  margin-bottom: 120px;
+}
+.feedback__inner-photo1 {
+  grid-area: feedback__inner-photo1;
+  background-image: url(https://media.istockphoto.com/photos/headshot-of-cheerful-handsome-man-with-trendy-haircut-and-eyeglasses-picture-id1171169127?k=20&m=1171169127&s=612x612&w=0&h=DxYc1UDQagCiuuaiR1OMRztEsOnWBXwjLPlVqVnn4eY=);
+  background-size: cover;
+  background-position-x: 50%;
+  border-radius: 100%;
+  width: 115px;
+  height: 115px;
+  margin: 15px;
+}
+.feedback__inner-photo2 {
+  grid-area: feedback__inner-photo2;
+  background-image: url(https://media.istockphoto.com/photos/pensive-man-looking-at-the-camera-picture-id507995592?k=20&m=507995592&s=612x612&w=0&h=hVngTIJxgesGOz-W41bp0BEOKLUdpqoafcGncltmlZc=);
+  background-size: cover;
+  background-position-x: 52%;
+  border-radius: 100%;
+  width: 115px;
+  height: 115px;
+  margin: 15px;
+}
+.feedback__inner-review1 {
+  grid-area: feedback__inner-review1;
+  padding: 15px;
+}
+.feedback__inner-review2 {
+  grid-area: feedback__inner-review2;
+  padding: 15px;
+}
+.feedback__inner-review3 {
+  grid-area: feedback__inner-review3;
+  padding: 15px;
+}
+.feedback__inner-review4 {
+  grid-area: feedback__inner-review4;
+  padding: 15px;
+}
+.feedback__inner-review5 {
+  grid-area: feedback__inner-review5;
+  padding: 15px;
+}
+.feedback__inner-review6 {
+  grid-area: feedback__inner-review6;
+  padding: 15px;
+}
+.feedback__inner-photo3 {
+  grid-area: feedback__inner-photo3;
+  background-image: url(https://media.istockphoto.com/photos/mid-adult-man-smiling-on-gray-background-picture-id1139722168?k=20&m=1139722168&s=612x612&w=0&h=LvAs1tTBZGcUk1ubzDkfJ7Vv2-xm5JL9UgX3EmzH4HM=);
+  background-size: cover;
+  background-position-x: 41%;
+  border-radius: 100%;
+  width: 115px;
+  height: 115px;
+  margin: 15px;
+}
+.feedback__inner-photo4 {
+  grid-area: feedback__inner-photo4;
+  background-image: url(https://media.istockphoto.com/photos/businessman-in-textile-factory-picture-id669888024?k=20&m=669888024&s=612x612&w=0&h=hcYo_LxGllshTrZf9pqUt2LryUQANyZHWzYSkF-zHX0=);
+  background-size: cover;
+  background-position-x: 55%;
+  border-radius: 100%;
+  width: 115px;
+  height: 115px;
+  margin: 15px;
+}
+.feedback__inner-photo5 {
+  grid-area: feedback__inner-photo5;
+  background-image: url(https://media.istockphoto.com/photos/middle-aged-man-portrait-picture-id1285156699?k=20&m=1285156699&s=612x612&w=0&h=9DKYOVJ2DRX3iKrCJEI5UPN2ht1OfrCGUvj10W0eJV4=);
+  background-size: cover;
+  background-position-x: 67%;
+  border-radius: 100%;
+  width: 115px;
+  height: 115px;
+  margin: 15px;
+}
+.feedback__inner-photo6 {
+  grid-area: feedback__inner-photo6;
+  background-image: url(https://media.istockphoto.com/photos/mid-adult-black-male-creative-in-an-office-social-area-turning-to-picture-id1146471147?k=20&m=1146471147&s=612x612&w=0&h=STKrK1RCiC9YmSvMdFfJ_zyPP_vmzZG2AUm1v8H2aeo=);
+  background-size: cover;
+  background-position-x: 30%;
+  border-radius: 100%;
+  width: 115px;
+  height: 115px;
+  margin: 15px;
+}
+
+.feedback__inner-review-name {
+  font-size: 18px;
+  font-family: "Darker Grotesque";
+  margin-bottom: 10px;
+}
+
+.feedback__inner-review-text {
+  font-size: 12px;
+}
+
+.feedback__title {
+  margin: 30px 0;
+}
+
+.feedback__title-inner,
+.gallery__inner-title {
+  font-family: "Darker Grotesque";
+  font-size: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.feedback__title-logo img,
+.gallery__inner-title-logo img,
+.footer__form-title-logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.feedback__inner img {
+  padding: 10px;
+}
+
+.discount {
+  background: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 1.5)),
+    url(http://znanie-courses.com.ua/wp-content/uploads/2018/12/barber-barber-hairdresser.jpg);
+  background-size: cover;
+  background-position-y: 38%;
+  padding: 30px;
+}
+
+.discount__inner-title {
+  color: #ffbb00;
+  font-size: 24px;
+  line-height: 15px;
+  padding: 10px 0;
+}
+
+.discount__inner-description {
+  font-family: "Montserrat", italic;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 10px 240px;
+  color: #fff;
+}
+
+.discount__inner-button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #ffbb00;
+  font-family: "Darker Grotesque";
+  font-weight: 400;
+  padding: 10px 30px;
+  line-height: 19px;
+  margin: 10px 0 0;
+}
+.discount__inner-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.gallery__inner {
+  padding: 40px 0;
+}
+
+.gallery__inner-photos {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.gallery__inner-photos-item_2col {
+  grid-column: span 2;
+}
+
+.gallery__inner-photos-item_2row {
+  grid-row: span 2;
+}
+
+.gallery__inner-photos-item_4 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery__inner-photos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map {
+  height: 670px;
+  background-image: url(https://mykharkov.info/wp-content/uploads/2016/07/IMG_0281.jpg);
+}
+
+/* .map::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(https://mykharkov.info/wp-content/uploads/2016/07/IMG_0281.jpg);
+  background-size: cover;
+  filter: grayscale(100%);
+} */
+
+.map__inner {
+  padding: 65px 40px;
+}
+
+.map__inner_data-item {
+  display: flex;
+  padding: 30px 0;
+}
+
+.map__inner_data {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(22, 21, 21);
+  color: #666666;
+  padding: 0 30px;
+}
+
+.map__inner_data-item-text {
+  margin: 0px 8px;
+}
+
+.map__inner_data-item-title {
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+
+.map__inner_data-item-descr {
+  font-size: 11px;
+}
+
+.footer {
+  height: 700px;
+  background-color: rgb(22, 21, 21);
+  margin-top: -20px;
+}
+
+.footer a {
+  font-family: "Montserrat";
+  font-size: 12px;
+  color: #ffbb00;
+  font-weight: 500;
+}
+
+.footer__menu-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 200px;
+  padding: 0;
+}
+
+.footer__menu-list li {
+  margin: 70px 0px 20px;
+}
+
+.dot {
+  color: #ffbb00;
+  font-size: 32px;
+  line-height: 148px;
+}
+
+.footer__form-title {
+  font-family: "Darker Grotesque";
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  line-height: 23px;
+  margin-top: 20px;
+}
+
+.footer__form-descr {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0 40px;
+}
+
+.footer__form {
+  margin: 0px 285px;
+  border: 1px solid rgb(117, 111, 111);
+  padding: 5px 5px;
+}
+
+.footer__form-inner {
+  display: flex;
+}
+
+.footer__form-email {
+  width: 500px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: rgb(22, 21, 21);
+  color: #fff;
+}
+
+.footer__form-btn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgb(49, 47, 47);
+  color: #fff;
+  font-size: 14px;
+  font-family: "Montserrat";
+  padding: 7px 0px;
+  line-height: 17px;
+  text-decoration: none;
+}
+.footer__form-btn:hover {
+  background-color: #ffbb00;
+  color: #000;
+}
+.footer__form-btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 285px;
+}
+
+.footer__links a {
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 26px;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  color: #ffbb00;
+  text-align: center;
+  margin-top: 85px;
+}
